@@ -3,30 +3,107 @@
 # for slwitching ON level3  and available options as Compose keys.
 # One useful compbination is
 # lv3:ralt_switch_multikey Right Alt; Shift+Right Alt as Compose
-# 
+#
 include "%L"
 
-<Multi_key> <Cyrillic_ZE> <Cyrillic_IE> : "Ꙁ" #U+A640 CYRILLIC CAPITAL LETTER ZEMLYA
-# Compose, Д, З => S
+# Compose,З,E => Ꙁ
+<Multi_key> <Cyrillic_ZE> <Cyrillic_IE> : "Ꙁ" #CYRILLIC CAPITAL LETTER ZEMLYA
+# Compose,Д,З => S
 <Multi_key> <Cyrillic_DE> <Cyrillic_ZE> : "S" #CYRILLIC CAPITAL LETTER DZE
-# Compose, З, З => Ꙃ
+# Compose,З,З => Ꙃ
 <Multi_key> <Cyrillic_ZE> <Cyrillic_ZE> : "Ꙃ" #CYRILLIC CAPITAL LETTER DZELO
+# Compose,И,. => І || Compose,.,И => І
+<Multi_key> <period>      <Cyrillic_I>  : "І" #CYRILLIC CAPITAL LETTER BYELORUSSIAN-UKRAINIAN I
 <Multi_key> <Cyrillic_I>  <period>      : "І" #CYRILLIC CAPITAL LETTER BYELORUSSIAN-UKRAINIAN I
+# Compose,И,: => Ї || Compose,:,И => Ї
 <Multi_key> <Cyrillic_I>  <colon>       : "Ї" #CYRILLIC CAPITAL LETTER YI
+<Multi_key> <colon>      <Cyrillic_I>   : "Ї" #CYRILLIC CAPITAL LETTER YI
+# Compose,О,У => Ѹ || Compose,У,О => Ѹ
 <Multi_key> <Cyrillic_O>  <Cyrillic_U>  : "Ѹ" #CYRILLIC CAPITAL LETTER UK
+<Multi_key> <Cyrillic_U>  <Cyrillic_O>  : "Ѹ" #CYRILLIC CAPITAL LETTER UK
+# Compose,У,К => Ꙋ
 <Multi_key> <Cyrillic_U>  <Cyrillic_KA> : "Ꙋ" #CYRILLIC CAPITAL LETTER MONOGRAPH UK
+# Compose,О,М => Ѡ
 <Multi_key> <Cyrillic_O>  <Cyrillic_EM> : "Ѡ" #CYRILLIC CAPITAL LETTER OMEGA
+# Compose,Я,Е => Ѣ || Compose,Е,Я => Ѣ
+<Multi_key> <Cyrillic_YA> <Cyrillic_IE> : "Ѣ" #CYRILLIC CAPITAL LETTER YAT
 <Multi_key> <Cyrillic_IE> <Cyrillic_YA> : "Ѣ" #CYRILLIC CAPITAL LETTER YAT
+# Compose,И,А => Ꙗ
 <Multi_key> <Cyrillic_I>  <Cyrillic_A>  : "Ꙗ" #CYRILLIC CAPITAL LETTER IOTIFIED A
+# Compose,И,Е => Ѥ
 <Multi_key> <Cyrillic_I>  <Cyrillic_IE> : "Ѥ" #CYRILLIC CAPITAL LETTER IOTIFIED E
+# Compose,Е,Н => Ѧ
 <Multi_key> <Cyrillic_IE> <Cyrillic_EN> : "Ѧ" #CYRILLIC CAPITAL LETTER LITTLE YUS
+# Compose,И,Н => Ѩ
 <Multi_key> <Cyrillic_I>  <Cyrillic_EN> : "Ѩ" #CYRILLIC CAPITAL LETTER IOTIFIED LITTLE YUS
+# Compose,Е,М => Ѫ
 <Multi_key> <Cyrillic_IE> <Cyrillic_EM> : "Ѫ" #CYRILLIC CAPITAL LETTER BIG YUS
-<Multi_key> <Cyrillic_I>  <Cyrillic_EM> : "Ѭ" #CYRILLIC CAPITAL LETTER IOTIFIED BIG YUS 
+# Compose,И,М => Ѭ
+<Multi_key> <Cyrillic_I>  <Cyrillic_EM> : "Ѭ" #CYRILLIC CAPITAL LETTER IOTIFIED BIG YUS
+# Compose,К,С => Ѯ
 <Multi_key> <Cyrillic_KA> <Cyrillic_ES> : "Ѯ" #CYRILLIC CAPITAL LETTER KSI
+# Compose,П,С => Ѱ
 <Multi_key> <Cyrillic_PE> <Cyrillic_ES> : "Ѱ" #CYRILLIC CAPITAL LETTER PSI
-
-
-
-
+# Compose,Т,Х => Ѳ
+<Multi_key> <Cyrillic_TE> <Cyrillic_HA> : "Ѳ" #CYRILLIC CAPITAL LETTER FITA
+# Compose,У,Ж => Ѵ
+<Multi_key> <Cyrillic_U> <Cyrillic_ZHE> : "Ѵ" #CYRILLIC CAPITAL LETTER IZHITSA
+# Compose,Ж,: => Ѷ
+<Multi_key> <Cyrillic_ZHE> <colon>      : "Ѷ" #CYRILLIC CAPITAL LETTER IZHITSA WITH DOUBLE GRAVE ACCENT
+# Compose,К,О => Ҁ
+<Multi_key> <Cyrillic_KA> <Cyrillic_O>  : "Ҁ" #CYRILLIC CAPITAL LETTER KOPPA
+# Compose,О,Т => Ѿ
+<Multi_key> <Cyrillic_O>  <Cyrillic_TE> : "Ѿ" #CYRILLIC CAPITAL LETTER OT
+# Compose,Ъ,И => Ы
+<Multi_key> <U042A>  <Cyrillic_I> : "Ы" #CYRILLIC CAPITAL LETTER YERU
+# Compose,з,e => ꙁ
+<Multi_key> <Cyrillic_ze> <Cyrillic_ie> : "ꙁ" #cyrillic small letter zemlya
+# Compose,д,з => s
+<Multi_key> <Cyrillic_de> <Cyrillic_ze> : "s" #cyrillic small letter dze
+# Compose,з,з => ꙃ
+<Multi_key> <Cyrillic_ze> <Cyrillic_ze> : "ꙃ" #cyrillic small letter dzelo
+# Compose,и,. => і || Compose,.,и => і
+<Multi_key> <period>      <Cyrillic_i>  : "і" #cyrillic small letter byelorussian-ukrainian i
+<Multi_key> <Cyrillic_i>  <period>      : "і" #cyrillic small letter byelorussian-ukrainian i
+# Compose,и,: => ї || Compose,:,и => ї
+<Multi_key> <Cyrillic_i>  <colon>       : "ї" #cyrillic small letter yi
+<Multi_key> <colon>      <Cyrillic_i>   : "ї" #cyrillic small letter yi
+# Compose,о,у => ѹ || Compose,у,о => ѹ
+<Multi_key> <Cyrillic_o>  <Cyrillic_u>  : "ѹ" #cyrillic small letter uk
+<Multi_key> <Cyrillic_u>  <Cyrillic_o>  : "ѹ" #cyrillic small letter uk
+# Compose,у,к => ꙋ
+<Multi_key> <Cyrillic_u>  <Cyrillic_ka> : "ꙋ" #cyrillic small letter monograph uk
+# Compose,о,м => ѡ
+<Multi_key> <Cyrillic_o>  <Cyrillic_em> : "ѡ" #cyrillic small letter omega
+# Compose,я,е => ѣ || Compose,е,я => ѣ
+<Multi_key> <Cyrillic_ya> <Cyrillic_ie> : "ѣ" #cyrillic small letter yat
+<Multi_key> <Cyrillic_ie> <Cyrillic_ya> : "ѣ" #cyrillic small letter yat
+# Compose,и,а => ꙗ
+<Multi_key> <Cyrillic_i>  <Cyrillic_a>  : "ꙗ" #cyrillic small letter iotified a
+# Compose,и,е => ѥ
+<Multi_key> <Cyrillic_i>  <Cyrillic_IE> : "Ѥ" #CYRILLIC small LETTER IOTIFIED E
+# Compose,е,н => ѧ
+<Multi_key> <Cyrillic_ie> <Cyrillic_en> : "ѧ" #cyrillic small letter little yus
+# Compose,и,н => ѩ
+<Multi_key> <Cyrillic_i>  <Cyrillic_en> : "ѩ" #cyrillic small letter iotified little yus
+# Compose,е,м => ѫ
+<Multi_key> <Cyrillic_ie> <Cyrillic_em> : "ѫ" #cyrillic small letter big yus
+# Compose,и,м => ѭ
+<Multi_key> <Cyrillic_i>  <Cyrillic_em> : "ѭ" #cyrillic small letter iotified big yus
+# Compose,к,с => ѯ
+<Multi_key> <Cyrillic_ka> <Cyrillic_es> : "ѯ" #cyrillic small letter ksi
+# Compose,п,с => ѱ
+<Multi_key> <Cyrillic_pe> <Cyrillic_es> : "ѱ" #cyrillic small letter psi
+# Compose,т,х => ѳ
+<Multi_key> <Cyrillic_te> <Cyrillic_ha> : "ѳ" #cyrillic small letter fita
+# Compose,у,ж => ѵ
+<Multi_key> <Cyrillic_u> <Cyrillic_zhe> : "ѵ" #cyrillic small letter izhitsa
+# Compose,ж,: => ѷ
+<Multi_key> <Cyrillic_zhe> <colon>      : "ѷ" #cyrillic small letter izhitsa with double grave accent
+# Compose,к,о => ҁ
+<Multi_key> <Cyrillic_ka> <Cyrillic_o>  : "ҁ" #cyrillic small letter koppa
+# Compose,о,т => ѿ
+<Multi_key> <Cyrillic_o>  <Cyrillic_te> : "ѿ" #cyrillic small letter ot
+# Compose,ъ,и => ы
+<Multi_key> <U042A>  <Cyrillic_i> : "ы" #cyrillic small letter yeru
 
