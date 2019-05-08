@@ -50,34 +50,44 @@ include "%L"
 # Compose,я,е => ѣ || Compose,е,я => ѣ
 <Multi_key> <Cyrillic_ya> <Cyrillic_ie> : "ѣ" #cyrillic small letter yat
 <Multi_key> <Cyrillic_ie> <Cyrillic_ya> : "ѣ" #cyrillic small letter yat
-## Compose,И,А => Ꙗ || Compose,И,а => Ꙗ
-#<Multi_key> <Cyrillic_I>  <Cyrillic_A>  : "Ꙗ" #CYRILLIC CAPITAL LETTER IOTIFIED A
-#<Multi_key> <Cyrillic_I>  <Cyrillic_a>  : "Ꙗ" #CYRILLIC CAPITAL LETTER IOTIFIED A
-## Compose,И,Е => Ѥ
-#<Multi_key> <Cyrillic_I>  <Cyrillic_IE> : "Ѥ" #CYRILLIC CAPITAL LETTER IOTIFIED E
-## Compose,Е,Н => Ѧ || Compose,А,Н => Ѧ || Compose,Е,н => Ѧ || Compose,А,н => Ѧ
-#<Multi_key> <Cyrillic_IE> <Cyrillic_EN> : "Ѧ" #CYRILLIC CAPITAL LETTER LITTLE YUS
-#<Multi_key> <Cyrillic_A>  <Cyrillic_EN> : "Ѧ" #CYRILLIC CAPITAL LETTER LITTLE YUS
-#<Multi_key> <Cyrillic_IE> <Cyrillic_en> : "Ѧ" #CYRILLIC CAPITAL LETTER LITTLE YUS
-#<Multi_key> <Cyrillic_A>  <Cyrillic_en> : "Ѧ" #CYRILLIC CAPITAL LETTER LITTLE YUS
-## Compose,И,Н => Ѩ || Compose,Я,Н => Ѩ || Compose,И,н => Ѩ || Compose,Я,н => Ѩ
-#<Multi_key> <Cyrillic_I>  <Cyrillic_EN> : "Ѩ" #CYRILLIC CAPITAL LETTER IOTIFIED LITTLE YUS
-#<Multi_key> <Cyrillic_YA> <Cyrillic_EN> : "Ѩ" #CYRILLIC CAPITAL LETTER IOTIFIED LITTLE YUS
-#<Multi_key> <Cyrillic_I>  <Cyrillic_en> : "Ѩ" #CYRILLIC CAPITAL LETTER IOTIFIED LITTLE YUS
-#<Multi_key> <Cyrillic_YA> <Cyrillic_en> : "Ѩ" #CYRILLIC CAPITAL LETTER IOTIFIED LITTLE YUS
-## Compose,Е,М => Ѫ || Compose,Е,м => Ѫ || Compose,А,м => Ѫ || Compose,А,М => Ѫ || || ||
-#<Multi_key> <Cyrillic_IE> <Cyrillic_EM> : "Ѫ" #CYRILLIC CAPITAL LETTER BIG YUS
-#<Multi_key> <Cyrillic_IE> <Cyrillic_em> : "Ѫ" #CYRILLIC CAPITAL LETTER BIG YUS
-#<Multi_key> <Cyrillic_A> <Cyrillic_EM>  : "Ѫ" #CYRILLIC CAPITAL LETTER BIG YUS
-#<Multi_key> <Cyrillic_A> <Cyrillic_em>  : "Ѫ" #CYRILLIC CAPITAL LETTER BIG YUS
-## Compose,Ъ,М => Ѫ || Compose,Ъ,м => Ѫ
-#<Multi_key> <U042A> <Cyrillic_EM>       : "Ѫ" #CYRILLIC CAPITAL LETTER BIG YUS
-#<Multi_key> <U042A> <Cyrillic_em>       : "Ѫ" #CYRILLIC CAPITAL LETTER BIG YUS
-## Compose,А,Ъ => Ѫ || Compose,А,ъ => Ѫ || Compose,Ъ,А => Ѫ || Compose,Ъ,а => Ѫ
-#<Multi_key> <Cyrillic_A> <U042A>        : "Ѫ" #CYRILLIC CAPITAL LETTER BIG YUS
-#<Multi_key> <Cyrillic_A> <U044A>        : "Ѫ" #CYRILLIC CAPITAL LETTER BIG YUS
-#<Multi_key> <U042A> <Cyrillic_A>   : "Ѫ" #CYRILLIC CAPITAL LETTER BIG YUS
-#<Multi_key> <U042A> <Cyrillic_a>   : "Ѫ" #CYRILLIC CAPITAL LETTER BIG YUS
+# Compose,И,А => Ꙗ || Compose,И,а => Ꙗ
+<Multi_key> <Cyrillic_I>  <Cyrillic_A>  : "Ꙗ" #CYRILLIC CAPITAL LETTER IOTIFIED A
+<Multi_key> <Cyrillic_I>  <Cyrillic_a>  : "Ꙗ" #CYRILLIC CAPITAL LETTER IOTIFIED A
+# Compose,и,а => ꙗ
+<Multi_key> <Cyrillic_i>  <Cyrillic_a>  : "ꙗ" #cyrillic small letter iotified a
+# Compose,И,Е => Ѥ
+<Multi_key> <Cyrillic_I>  <Cyrillic_IE> : "Ѥ" #CYRILLIC CAPITAL LETTER IOTIFIED E
+<Multi_key> <Cyrillic_I>  <Cyrillic_ie> : "Ѥ" #CYRILLIC CAPITAL LETTER IOTIFIED E
+# Compose,и,е => ѥ
+<Multi_key> <Cyrillic_i>  <Cyrillic_ie> : "ѥ" #CYRILLIC small LETTER IOTIFIED E
+
+# Compose,Е,Н => Ѧ || Compose,А,Н => Ѧ || Compose,Е,н => Ѧ || Compose,А,н => Ѧ
+<Multi_key> <Cyrillic_IE> <Cyrillic_EN> : "Ѧ" #CYRILLIC CAPITAL LETTER LITTLE YUS
+<Multi_key> <Cyrillic_A>  <Cyrillic_EN> : "Ѧ" #CYRILLIC CAPITAL LETTER LITTLE YUS
+<Multi_key> <Cyrillic_IE> <Cyrillic_en> : "Ѧ" #CYRILLIC CAPITAL LETTER LITTLE YUS
+<Multi_key> <Cyrillic_A>  <Cyrillic_en> : "Ѧ" #CYRILLIC CAPITAL LETTER LITTLE YUS
+# Compose,е,н => ѧ || Compose,a,н => ѧ
+<Multi_key> <Cyrillic_ie> <Cyrillic_en> : "ѧ" #cyrillic small letter little yus
+<Multi_key> <Cyrillic_a> <Cyrillic_en> : "ѧ" #cyrillic small letter little yus
+# Compose,И,Н => Ѩ || Compose,Я,Н => Ѩ || Compose,И,н => Ѩ || Compose,Я,н => Ѩ
+<Multi_key> <Cyrillic_I>  <Cyrillic_EN> : "Ѩ" #CYRILLIC CAPITAL LETTER IOTIFIED LITTLE YUS
+<Multi_key> <Cyrillic_YA> <Cyrillic_EN> : "Ѩ" #CYRILLIC CAPITAL LETTER IOTIFIED LITTLE YUS
+<Multi_key> <Cyrillic_I>  <Cyrillic_en> : "Ѩ" #CYRILLIC CAPITAL LETTER IOTIFIED LITTLE YUS
+<Multi_key> <Cyrillic_YA> <Cyrillic_en> : "Ѩ" #CYRILLIC CAPITAL LETTER IOTIFIED LITTLE YUS
+# Compose,и,н => ѩ|| Compose,я,н => ѩ
+<Multi_key> <Cyrillic_i>  <Cyrillic_en> : "ѩ" #cyrillic small letter iotified little yus
+<Multi_key> <Cyrillic_ya>  <Cyrillic_en> : "ѩ" #cyrillic small letter iotified little yus
+# Compose,Е,М => Ѫ || Compose,Е,м => Ѫ || Compose,А,м => Ѫ || Compose,А,М => Ѫ || || ||
+<Multi_key> <Cyrillic_IE> <Cyrillic_EM> : "Ѫ" #CYRILLIC CAPITAL LETTER BIG YUS
+<Multi_key> <Cyrillic_IE> <Cyrillic_em> : "Ѫ" #CYRILLIC CAPITAL LETTER BIG YUS
+<Multi_key> <Cyrillic_A> <Cyrillic_EM>  : "Ѫ" #CYRILLIC CAPITAL LETTER BIG YUS
+<Multi_key> <Cyrillic_A> <Cyrillic_em>  : "Ѫ" #CYRILLIC CAPITAL LETTER BIG YUS
+<Multi_key> <Cyrillic_O> <Cyrillic_EN>  : "Ѫ" #CYRILLIC CAPITAL LETTER BIG YUS
+<Multi_key> <Cyrillic_O> <Cyrillic_en>  : "Ѫ" #CYRILLIC CAPITAL LETTER BIG YUS
+# Compose,е,м => ѫ || Compose,а,м => ѫ
+<Multi_key> <Cyrillic_ie> <Cyrillic_em> : "ѫ" #cyrillic small letter big yus
+<Multi_key> <Cyrillic_a> <Cyrillic_em>  : "ѫ" #cyrillic small letter big yus
+<Multi_key> <Cyrillic_o> <Cyrillic_en>  : "ѫ" #cyrillic small letter big yus
 ## Compose,И,М => Ѭ || Compose,Я,М => Ѭ || Compose,И,Я => Ѭ || Compose,И,я => Ѭ ||
 #<Multi_key> <Cyrillic_I>  <Cyrillic_EM> : "Ѭ" #CYRILLIC CAPITAL LETTER IOTIFIED BIG YUS
 #<Multi_key> <Cyrillic_I>  <Cyrillic_YA> : "Ѭ" #CYRILLIC CAPITAL LETTER IOTIFIED BIG YUS
@@ -104,22 +114,6 @@ include "%L"
 #<Multi_key> <U042A>  <Cyrillic_I> : "Ы" #CYRILLIC CAPITAL LETTER YERU
 #<Multi_key> <U042A>  <U0419>      : "Ы" #CYRILLIC CAPITAL LETTER YERU
 #<Multi_key> <U042A>  <U0439>      : "Ы" #CYRILLIC CAPITAL LETTER YERU
-## Compose,и,а => ꙗ
-#<Multi_key> <Cyrillic_i>  <Cyrillic_a>  : "ꙗ" #cyrillic small letter iotified a
-## Compose,и,е => ѥ
-#<Multi_key> <Cyrillic_i>  <Cyrillic_ie> : "ѥ" #CYRILLIC small LETTER IOTIFIED E
-## Compose,е,н => ѧ || Compose,a,н => ѧ 
-#<Multi_key> <Cyrillic_ie> <Cyrillic_en> : "ѧ" #cyrillic small letter little yus
-#<Multi_key> <Cyrillic_a> <Cyrillic_en> : "ѧ" #cyrillic small letter little yus
-## Compose,и,н => ѩ|| Compose,я,н => ѩ
-#<Multi_key> <Cyrillic_i>  <Cyrillic_en> : "ѩ" #cyrillic small letter iotified little yus
-#<Multi_key> <Cyrillic_i>  <Cyrillic_en> : "ѩ" #cyrillic small letter iotified little yus
-## Compose,е,м => ѫ || Compose,а,ъ => ѫ || Compose,ъ,а => ѫ || Compose,а,м => ѫ || Compose,ъ,м => ѫ || 
-#<Multi_key> <Cyrillic_ie> <Cyrillic_em> : "ѫ" #cyrillic small letter big yus
-#<Multi_key> <Cyrillic_a>  <U044A>       : "ѫ" #cyrillic small letter big yus
-#<Multi_key> <U044A>       <Cyrillic_a>  : "ѫ" #cyrillic small letter big yus
-#<Multi_key> <Cyrillic_a> <Cyrillic_em>  : "ѫ" #cyrillic small letter big yus
-#<Multi_key> <U044A>      <Cyrillic_em>  : "ѫ" #cyrillic small letter big yus
 ## Compose,и,м => ѭ || Compose,и,я => ѭ || Compose,и,ъ => ѭ || Compose,и,ь => ѭ
 #<Multi_key> <Cyrillic_i>  <Cyrillic_em> : "ѭ" #cyrillic small letter iotified big yus
 #<Multi_key> <Cyrillic_i>  <Cyrillic_ya> : "ѭ" #cyrillic small letter iotified big yus
