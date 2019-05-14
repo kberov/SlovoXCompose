@@ -2,6 +2,81 @@
 
 =encoding utf8
 
+=begin html
+
+<style>
+@font-face {
+    font-family: 'Veleka';
+    src: url('fonts/veleka-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Veleka';
+    src: url('fonts/veleka-bolditalic-webfont.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Veleka';
+    src: url('fonts/veleka-italic-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Veleka';
+    src: url('fonts/veleka-bold-webfont.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FreeSerif';
+    src: url('fonts/freeserif-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FreeSans';
+    src: url('fonts/freesans-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FreeMono';
+    src: url('fonts/freemono-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BukyvedeRegular';
+    src: url('fonts/bukyvede-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BukyvedeRegular';
+    src: url('fonts/bukyvede-bold-webfont.woff2') format('woff2');
+    font-weight: bolder;
+    font-style: normal;
+}
+
+/* Generic font styles */
+body {
+    font-family: Veleka, BukyvedeRegular, FreeSerif, serif;
+    font-weight: normal;
+}
+</style>
+
+=end html
+
 =head1 ИМѦ
 
 SlovoXCompose
@@ -131,6 +206,26 @@ XFCE нѣма отделни настройки за трето ниво, но �
 Така в XFCE можетѣ хем да зададетѣ I<Съставен ключ>, хем да зададетѣ клавиш
 (ключ) за трето ниво.
 
+=over
+
+B<Самото въвѣждане става по слѣднѭ начин:>
+
+Нaтискате избранѭ I<съставен ключ>. Пускате го. Не го държите постоянно
+натиснат. Слѣд това въвѣждате първата, а след неꙗ и втората бꙋква ѿ
+послѣдователността.
+
+Примѣр (за съставен ключ е избран Shift+Right Alt):
+
+Ꙁа да въвѣдетѣ „ѯ” като в „Линуѯ”, натискате едновременно Shift и десен Alt, а
+след това натискате послѣдователно „к” и „с”.
+
+Ꙁа да напишете „ꙁемꙗ”, натискате едновременно Shift и десен Alt, а след това
+натискате послѣдователно „з” и „е”. Слѣд това продължавате съ „ем”. След което,
+ꙁа да напишете ꙗ, правите както при ꙁ – натискате едновременно Shift и десен
+Alt, а след това натискате послѣдователно „и” и „а”.
+
+=back
+
 =head1 ПРИНОС
 
 Можетѣ да помогнете като добавитѣ нови последователности ѿ клавиши или като
@@ -142,10 +237,10 @@ XFCE нѣма отделни настройки за трето ниво, но �
 
 Красимир Беров <berov@cpan.org>
 
-=head1 СЪСТАВИЛИ .XCompose
+=head1 СЪСТАВИЛ .XCompose
 
 Красимир Беров
 
-
 =cut
+
 
