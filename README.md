@@ -1,89 +1,17 @@
-<div>
-    <style>
-    @font-face {
-        font-family: 'Veleka';
-        src: url('fonts/veleka-regular-webfont.woff2') format('woff2');
-        font-weight: normal;
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: 'Veleka';
-        src: url('fonts/veleka-bolditalic-webfont.woff2') format('woff2');
-        font-weight: bold;
-        font-style: italic;
-    }
-
-    @font-face {
-        font-family: 'Veleka';
-        src: url('fonts/veleka-italic-webfont.woff2') format('woff2');
-        font-weight: normal;
-        font-style: italic;
-    }
-
-    @font-face {
-        font-family: 'Veleka';
-        src: url('fonts/veleka-bold-webfont.woff2') format('woff2');
-        font-weight: bold;
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: 'FreeSerif';
-        src: url('fonts/freeserif-webfont.woff2') format('woff2');
-        font-weight: normal;
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: 'FreeSans';
-        src: url('fonts/freesans-webfont.woff2') format('woff2');
-        font-weight: normal;
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: 'FreeMono';
-        src: url('fonts/freemono-webfont.woff2') format('woff2');
-        font-weight: normal;
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: 'BukyvedeRegular';
-        src: url('fonts/bukyvede-regular-webfont.woff2') format('woff2');
-        font-weight: normal;
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: 'BukyvedeRegular';
-        src: url('fonts/bukyvede-bold-webfont.woff2') format('woff2');
-        font-weight: bolder;
-        font-style: normal;
-    }
-
-    /* Generic font styles */
-    h1,h2,h3,h4,p {
-        font-family: Veleka, BukyvedeRegular, FreeSerif, serif;
-        font-weight: normal;
-    }
-    </style>
-</div>
-
 # ИМѦ
 
 SlovoXCompose
 
 # БѢЛѢЖКА
 
-Правописѫт и словникѫт, използувани в това рѫководство сѫ просто пример за употрѣба
-на старитѣ букви и не сѧ твърди, че сѧ спазват каквито и да е правила, макар
-да отразѣват до нѣкаква стѫпен (само)мнѣнието на пишещѭ.
+Правописѫт и словникѫт, използувани в това рѫководство сѫ просто пример за
+употрѣба на старитѣ букви и определен набор ѿ слова, и не сѧ твърди, че сѧ
+спазват каквито и да е правила, макар да отразѣват до нѣкаква стѫпен
+(само) мнѣнието на пишещѭ.
 
 # ОПИСАНѤ
 
-Това хранилище съдържа файл `.XCompose` с настройки за _съставно въвѣжданѣ_
+Това хранилищѣ съдържа файл `.XCompose` с настройки за _съставно въвѣжданѣ_
 на стари български бꙋкви на Юниѯ-подобни ꙋрѣдби с Ѯ-сървър. Такива изчислителни
 ꙋредби сѫ всички изданиꙗ на Линуѯ, Фрий-БСД, НЕТ-БСД… Това е възможно
 най-леснo осѫществимѭт начин да започнетѣ да въвѣждатѣ бꙋкви ѿ старата ни
