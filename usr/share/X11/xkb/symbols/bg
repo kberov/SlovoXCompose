@@ -256,6 +256,11 @@ xkb_symbols "latin" {
 // This file has to replace /usr/share/X11/xkb/symbols/bg
 // Do not forget to backup your original file
 // cp /usr/share/X11/xkb/symbols/bg /usr/share/X11/xkb/symbols/bg.backup
+// To use this layout, the us layout with dead keys and the greek extended
+// layout , on the commandline issue the following command:
+// setxkbmap -option; setxkbmap -v 10 -layout us,bg,gr -variant \
+//  altgr-intl,old_phonetic,extended -option -option \
+//  compose:lctrl-altgr,grp:ctrl_alt_toggle,lv3:ralt_switch_multikey,grp_led:scroll
 partial alphanumeric_keys
 xkb_symbols "old_phonetic" {
   include "bg(phonetic)"
@@ -265,6 +270,8 @@ xkb_symbols "old_phonetic" {
   key <AD01> {[ Cyrillic_ya,       Cyrillic_YA,       UA657, UA656 ]};
 //              е                  Е                  ѣ      Ѣ
   key <AD03> {[ Cyrillic_ie,       Cyrillic_IE,       U0463, U0462 ]};
+//              р                  Р                  ҏ       Ҏ - рж
+  key <AD04> {[ Cyrillic_er,       Cyrillic_ER,       U048F,  U048E]};
 //              т                  Т                  ѳ      Ѳ
   key <AD05> {[ Cyrillic_te,       Cyrillic_TE,       U0473, U0472 ]};
 //              ъ                  Ъ                  ꙑ      Ꙑ
@@ -276,25 +283,28 @@ xkb_symbols "old_phonetic" {
 //              о                  О                  ѫ      ѫ
   key <AD09> {[ Cyrillic_o,        Cyrillic_O,        U046B, U046A ]};
 //              п                  П                  ѱ      Ѱ
-  key <AD10> {[ Cyrillic_pe,       Cyrillic_PE,        U0471, U0470 ]};
+  key <AD10> {[ Cyrillic_pe,       Cyrillic_PE,       U0471, U0470 ]};
 //              а                  А                  ѧ      Ѧ
   key <AC01> {[ Cyrillic_a,        Cyrillic_A,        U0467, U0466 ]};
 //              д                  Д                  ꙃ      Ꙃ
   key <AC03> {[ Cyrillic_de,       Cyrillic_DE,       UA643, UA642 ]};
+//              г                  Г                  ґ      Ґ
+  key <AC05> {[ Cyrillic_ghe,      Cyrillic_GHE,      U0491, U0490 ]};
+//              х                  Х                  ї  Ї
+  key <AC06> {[ Cyrillic_ha,       Cyrillic_HA,       U0457, U0407 ]};
 //                                                    ѭ      Ѭ
   key <AC07> {[ Cyrillic_shorti,   Cyrillic_SHORTI,   U046D, U046C ]};
-//                       к         К              ѯ      Ѯ
-  key <AC08> {[ Cyrillic_ka,       Cyrillic_KA,   U046F, U046E   ]};
+//                       к         К                  ѯ      Ѯ
+  key <AC08> {[ Cyrillic_ka,       Cyrillic_KA,       U046F, U046E   ]};
 //              ю                  Ю                  ѩ        Ѩ
 key <BKSL> {[ Cyrillic_yu,       Cyrillic_YU,         U0469, U0468 ]};
 //              з                  З                  ꙁ      Ꙁ
   key <AB01> {[ Cyrillic_ze,       Cyrillic_ZE,       UA641, UA640 ]};
-//               ь                     Ь               ы              Ы
-  key <AB02> {[ Cyrillic_softsign, Cyrillic_SOFTSIGN,  Cyrillic_yeru, Cyrillic_YERU       ]};
+//               ь                     Ь              ы              Ы
+  key <AB02> {[ Cyrillic_softsign, Cyrillic_SOFTSIGN, Cyrillic_yeru, Cyrillic_YERU       ]};
 //               ц                  Ц                 s      S
   key <AB03> {[ Cyrillic_tse,      Cyrillic_TSE,      U0455, U0405 ]};
+//              н                  Н                  і      І
+  key <AB06> {[ Cyrillic_en,       Cyrillic_EN,       U0456, U0406  ]};
 };
-
-
-
 
