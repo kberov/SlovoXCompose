@@ -249,3 +249,52 @@ xkb_symbols "latin" {
 
   key <KPDL> { type[Group1] = "KEYPAD",             [ KP_Delete,         KP_Decimal          ]};
 };
+
+
+// The following additional keymap helps me to enter old bulgarian letters by
+// pressing just Altgr(right alt) and a specified key.
+// This file has to replace /usr/share/X11/xkb/symbols/bg
+// Do not forget to backup your original file
+// cp /usr/share/X11/xkb/symbols/bg /usr/share/X11/xkb/symbols/bg.backup
+partial alphanumeric_keys
+xkb_symbols "old_phonetic" {
+  include "bg(phonetic)"
+  name[Group2]= "Bulgarian (old traditional phonetic)";
+
+//              я                  Я                  Ꙗ      ꙗ
+  key <AD01> {[ Cyrillic_ya,       Cyrillic_YA,       UA657, UA656 ]};
+//              е                  Е                  ѣ      Ѣ
+  key <AD03> {[ Cyrillic_ie,       Cyrillic_IE,       U0463, U0462 ]};
+//              т                  Т                  ѳ      Ѳ
+  key <AD05> {[ Cyrillic_te,       Cyrillic_TE,       U0473, U0472 ]};
+//              ъ                  Ъ                  ꙑ      Ꙑ
+  key <AD06> {[ Cyrillic_hardsign, Cyrillic_HARDSIGN, UA651, UA650 ]};
+//              у                  У                  ѹ      Ѹ
+  key <AD07> {[ Cyrillic_u,        Cyrillic_U,        U0479, U0478 ]};
+//              и                  И                  ѥ      Ѥ
+  key <AD08> {[ Cyrillic_i,        Cyrillic_I,        U0465, U0464 ]};
+//              о                  О                  ѫ      ѫ
+  key <AD09> {[ Cyrillic_o,        Cyrillic_O,        U046B, U046A ]};
+//              п                  П                  ѱ      Ѱ
+  key <AD10> {[ Cyrillic_pe,       Cyrillic_PE,        U0471, U0470 ]};
+//              а                  А                  ѧ      Ѧ
+  key <AC01> {[ Cyrillic_a,        Cyrillic_A,        U0467, U0466 ]};
+//              д                  Д                  ꙃ      Ꙃ
+  key <AC03> {[ Cyrillic_de,       Cyrillic_DE,       UA643, UA642 ]};
+//                                                    ѭ      Ѭ
+  key <AC07> {[ Cyrillic_shorti,   Cyrillic_SHORTI,   U046D, U046C ]};
+//                       к         К              ѯ      Ѯ
+  key <AC08> {[ Cyrillic_ka,       Cyrillic_KA,   U046F, U046E   ]};
+//              ю                  Ю                  ѩ        Ѩ
+key <BKSL> {[ Cyrillic_yu,       Cyrillic_YU,         U0469, U0468 ]};
+//              з                  З                  ꙁ      Ꙁ
+  key <AB01> {[ Cyrillic_ze,       Cyrillic_ZE,       UA641, UA640 ]};
+//               ь                     Ь               ы              Ы
+  key <AB02> {[ Cyrillic_softsign, Cyrillic_SOFTSIGN,  Cyrillic_yeru, Cyrillic_YERU       ]};
+//               ц                  Ц                 s      S
+  key <AB03> {[ Cyrillic_tse,      Cyrillic_TSE,      U0455, U0405 ]};
+};
+
+
+
+
