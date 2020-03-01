@@ -251,12 +251,14 @@ xkb_symbols "latin" {
 };
 
 
+// By berov@cpan.org
 // The following additional keymap helps me to enter old bulgarian letters by
 // pressing just Altgr(right alt) and a specified key.
 // This file has to replace /usr/share/X11/xkb/symbols/bg
 // Do not forget to backup your original file
 // cp /usr/share/X11/xkb/symbols/bg /usr/share/X11/xkb/symbols/bg.backup
-// To use this layout, the us layout with dead keys and the greek extended
+
+// Example: To use this layout, the us layout with dead keys and the greek extended
 // layout , on the commandline issue the following command:
 // setxkbmap -option; setxkbmap -v 10 -layout us,bg,gr -variant \
 //  altgr-intl,old_phonetic,extended -option -option \
