@@ -29,10 +29,12 @@ include "%L"
 <Multi_key> <Cyrillic_i>  <period>      : "і" #cyrillic small letter byelorussian-ukrainian i
 # Compose,И,: => Ї || Compose,:,И => Ї
 <Multi_key> <Cyrillic_I>  <colon>       : "Ї" #CYRILLIC CAPITAL LETTER YI
-<Multi_key> <colon>      <Cyrillic_I>   : "Ї" #CYRILLIC CAPITAL LETTER YI
-# Compose,и,: => ї || Compose,:,и => ї
+<Multi_key> <Cyrillic_I>  <quotedbl>    : "Ї" #CYRILLIC CAPITAL LETTER YI
+<Multi_key> <colon>       <Cyrillic_I>  : "Ї" #CYRILLIC CAPITAL LETTER YI
+# Compose,и,: => ї || Compose,:,и => ї || Compose,и," => ї
 <Multi_key> <Cyrillic_i>  <colon>       : "ї" #cyrillic small letter yi
 <Multi_key> <colon>      <Cyrillic_i>   : "ї" #cyrillic small letter yi
+<Multi_key> <Cyrillic_i> <quotedbl>     : "ї" #cyrillic small letter yi
 # Compose,О,У => Ѹ
 <Multi_key> <Cyrillic_O>  <Cyrillic_U>  : "Ѹ" #CYRILLIC CAPITAL LETTER UK
 # Compose,о,у => ѹ
@@ -45,6 +47,12 @@ include "%L"
 <Multi_key> <Cyrillic_O>  <Cyrillic_O> : "Ѡ" #CYRILLIC CAPITAL LETTER OMEGA
 # Compose,о,о => ѡ
 <Multi_key> <Cyrillic_o>  <Cyrillic_o> : "ѡ" #cyrillic small letter omega
+# Compose,О,: => Ѻ || Compose,: О => Ѻ 
+<Multi_key> <Cyrillic_O>  <colon> : "Ѻ" #U+047A CYRILLIC CAPITAL LETTER ROUND OMEGA
+<Multi_key> <colon>  <Cyrillic_O> : "Ѻ" #U+047A CYRILLIC CAPITAL LETTER ROUND OMEGA
+# Compose,о,: || Compose,:,о =>ѻ
+<Multi_key> <Cyrillic_o>  <colon> : "ѻ" #U+047B CYRILLIC SMALL LETTER ROUND OMEGA
+<Multi_key> <colon>  <Cyrillic_o> : "ѻ" #U+047B CYRILLIC SMALL LETTER ROUND OMEGA
 # Compose,Я,Е => Ѣ || Compose,Е,Я => Ѣ
 <Multi_key> <Cyrillic_YA> <Cyrillic_IE> : "Ѣ" #CYRILLIC CAPITAL LETTER YAT
 <Multi_key> <Cyrillic_IE> <Cyrillic_YA> : "Ѣ" #CYRILLIC CAPITAL LETTER YAT
@@ -143,6 +151,8 @@ include "%L"
 # Compose, ъ, й => ꙑ || Compose, ъ, и => ꙑ
 <Multi_key> <Cyrillic_hardsign>  <Cyrillic_shorti>       : "ꙑ" #U+A651 CYRILLIC SMALL LETTER YERU WITH BACK YER
 <Multi_key> <Cyrillic_hardsign>  <Cyrillic_i>       : "ꙑ" #U+A651 CYRILLIC SMALL LETTER YERU WITH BACK YER
+# Compose, Ъ, Ъ  => Ь
+<Multi_key> <Cyrillic_HARDSIGN>  <Cyrillic_HARDSIGN> : "Ь" #U+042C CYRILLIC CAPITAL LETTER SOFT SIGN
 
 # The following do not work - TODO: Research and understand why
 ## Compose, -,Р
